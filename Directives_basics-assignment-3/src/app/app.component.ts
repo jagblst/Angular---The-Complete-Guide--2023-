@@ -10,6 +10,7 @@ export class AppComponent {
   count = [];
 
   onCount() {
-    this.count.push(this.count.length + 1);
+    // this.count.push(this.count.length + 1);
+    this.count.push(`${this.count.length + 1}. ${new Date()}`);
   }
 }
