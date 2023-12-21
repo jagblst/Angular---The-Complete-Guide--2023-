@@ -20,7 +20,7 @@ export class PostsService {
   }
 
   fetchPosts() {
-    this.http
+    return this.http
       .get<{ [key: string]: Post }>(
         "https://learning-angular-http-re-833b1-default-rtdb.europe-west1.firebasedatabase.app/posts.json"
       )
@@ -33,7 +33,6 @@ export class PostsService {
           }
           return postsArray;
         })
-      )
-      .subscribe((posts) => {});
+      );
   }
 }
