@@ -6,3 +6,7 @@ node_modules
 Dist
 
 standalone-components/.angular/
+
+standalone-components/standalone-components/
+
+standalone-components/routing-with-standalone-components/.angular/
